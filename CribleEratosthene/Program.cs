@@ -21,18 +21,10 @@ namespace CribleEratosthene
         }
 
       }
+
       display("");
       display("Press any key to exit:");
       Console.ReadKey();
-    }
-
-
-
-    private bool IsPrime(int number)
-    {
-      bool result = false;
-
-      return false;
     }
   }
 }
