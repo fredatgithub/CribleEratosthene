@@ -9,6 +9,7 @@ namespace LibraryEratosthene
     {
       for (int i = 0; i < crible.Length; i++)
       {
+        // all numbers are potentialy prime
         crible[i] = true;
       }
 
