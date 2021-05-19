@@ -1,6 +1,0 @@
-C:\Users\user1\source\repos\CribleEratosthene\LibraryEratosthene\bin\Debug\LibraryEratosthene.dll
-C:\Users\user1\source\repos\CribleEratosthene\LibraryEratosthene\bin\Debug\LibraryEratosthene.pdb
-C:\Users\user1\source\repos\CribleEratosthene\LibraryEratosthene\obj\Debug\LibraryEratosthene.csproj.CoreCompileInputs.cache
-C:\Users\user1\source\repos\CribleEratosthene\LibraryEratosthene\obj\Debug\LibraryEratosthene.dll
-C:\Users\user1\source\repos\CribleEratosthene\LibraryEratosthene\obj\Debug\LibraryEratosthene.pdb
-C:\Users\user1\source\repos\CribleEratosthene\LibraryEratosthene\obj\Debug\LibraryEratosthene.csprojAssemblyReference.cache
