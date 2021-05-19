@@ -1,0 +1,10 @@
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\bin\x64\Debug\CribleEratosthene.exe.config
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\bin\x64\Debug\CribleEratosthene.exe
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\bin\x64\Debug\CribleEratosthene.pdb
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\bin\x64\Debug\LibraryEratosthene.dll
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\bin\x64\Debug\LibraryEratosthene.pdb
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\obj\x64\Debug\CribleEratosthene.csprojAssemblyReference.cache
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\obj\x64\Debug\CribleEratosthene.csproj.CoreCompileInputs.cache
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\obj\x64\Debug\CribleEratosthene.csproj.CopyComplete
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\obj\x64\Debug\CribleEratosthene.exe
+C:\Users\user1\source\repos\CribleEratosthene\CribleEratosthene\obj\x64\Debug\CribleEratosthene.pdb
