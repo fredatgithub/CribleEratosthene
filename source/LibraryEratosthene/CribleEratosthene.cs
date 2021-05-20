@@ -36,6 +36,24 @@ namespace LibraryEratosthene
       return tableau;
     }
 
+    public static bool[] ApplyEratosthenePartially(bool[] tableau, int startNumber)
+    {
+      for (int i = 2; i < tableau.Length; i++)
+      {
+        for (int j = 2; j < tableau.Length; j++)
+        {
+          if (i * j > tableau.Length - 1)
+          {
+            break;
+          }
+
+          tableau[i * j] = false;
+        }
+      }
+
+      return tableau;
+    }
+
     public static bool[] Eratosthene(int limite, bool[] tableau)
     {
       /*
