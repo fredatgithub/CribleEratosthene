@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Numerics;
 
 namespace LibraryEratosthene
@@ -38,6 +39,12 @@ namespace LibraryEratosthene
 
     public static bool[] ApplyEratosthenePartially(bool[] tableau, int startNumber)
     {
+      var tableauDico = new Dictionary<int, bool>();
+      for (int i = 0; i < tableau.Length; i++)
+      {
+        tableauDico[startNumber + i] = tableau[i];
+      }
+
       for (int i = 2; i < tableau.Length; i++)
       {
         for (int j = 2; j < tableau.Length; j++)
@@ -51,6 +58,7 @@ namespace LibraryEratosthene
         }
       }
 
+      // convert dico back to array and return it.
       return tableau;
     }
 
