@@ -19,10 +19,9 @@ namespace CribleEratosthene
         {
           display2($"{i} ");
         }
-
       }
 
-      display("");
+      display(string.Empty);
       display("Press any key to exit:");
       Console.ReadKey();
     }
