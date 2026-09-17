@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace CribleEratosthene
 {
@@ -21,9 +22,30 @@ namespace CribleEratosthene
         }
       }
 
+      WriteToFile(crible, "primes_200_millions.txt");
       display(string.Empty);
       display("Press any key to exit:");
       Console.ReadKey();
+    }
+
+    private static void WriteToFile(bool[] crible, string filename, bool appendFile = false)
+    {
+      // write the crible to a file one number per line
+      try
+      {
+        StreamWriter sw = new StreamWriter(filename, appendFile);
+        for (int i = 0; i < crible.Length; i++)
+        {
+          if (crible[i])
+          {
+            sw.WriteLine(crible[i]);
+          }
+        }
+      }
+      catch (Exception exception)
+      {
+        Console.WriteLine(exception.ToString());
+      }
     }
   }
 }
