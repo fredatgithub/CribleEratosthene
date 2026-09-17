@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 
 namespace CribleEratosthene
 {
@@ -10,7 +11,8 @@ namespace CribleEratosthene
       Action<string> display = Console.WriteLine;
       Action<string> display2 = Console.Write;
       display("Recherche des nombres premiers en utilisant le crible d'ératosthène");
-      bool[] crible = new bool[200_000_000];
+      const int target = 200_000_000;
+      bool[] crible = new bool[target];
       crible = LibraryEratosthene.CribleEratosthene.InitializeCrible(crible);
 
       crible = LibraryEratosthene.CribleEratosthene.ApplyEratosthene(crible);
@@ -22,9 +24,10 @@ namespace CribleEratosthene
         }
       }
 
-      const string filename = "primes_200_millions.txt";
-      WriteToFile(crible, filename);
-      display($"Calcul terminé, le resultat a ete saugarde dans le fichier {filename}");
+      string filename = $"primes_{target}.txt";
+      WriteToFile(crible, filename, false);
+      display(string.Empty);
+      display($"Calcul terminé, le resultat a ete sauvegarde dans le fichier {filename}");
       display(string.Empty);
       display("Press any key to exit:");
       Console.ReadKey();
@@ -35,12 +38,14 @@ namespace CribleEratosthene
       // write the crible to a file one number per line
       try
       {
-        StreamWriter sw = new StreamWriter(filename, appendFile);
-        for (int i = 0; i < crible.Length; i++)
+        using (StreamWriter sw = new StreamWriter(filename, append: appendFile, encoding: Encoding.UTF8))
         {
-          if (crible[i])
+          for (int i = 0; i < crible.Length; i++)
           {
-            sw.WriteLine(crible[i]);
+            if (crible[i])
+            {
+              sw.WriteLine(i);
+            }
           }
         }
       }
