@@ -12,7 +12,7 @@ namespace CribleEratosthene
       Action<string> display = Console.WriteLine;
       Action<string> display2 = Console.Write;
       display("Recherche des nombres premiers en utilisant le crible d'ératosthène");
-      const int target = 200_000_000;
+      const int target = 400_000_000;
       Stopwatch chrono = new Stopwatch();
       chrono.Start();
       bool[] crible = new bool[target];
@@ -30,7 +30,7 @@ namespace CribleEratosthene
 
       display(string.Empty);
       display($"Temps écoulé : {FormatTime(totalTime)}");
-      display($"Temps écoulé : {chrono.Elapsed.TotalSeconds:F4} s");
+      display($"Temps écoulé en secondes : {chrono.Elapsed.TotalSeconds:F4} s");
 
       string filename = $"primes_{target}.txt";
       WriteToFile(crible, filename, false);
