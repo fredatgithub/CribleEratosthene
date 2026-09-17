@@ -22,7 +22,9 @@ namespace CribleEratosthene
         }
       }
 
-      WriteToFile(crible, "primes_200_millions.txt");
+      const string filename = "primes_200_millions.txt";
+      WriteToFile(crible, filename);
+      display($"Calcul terminé, le resultat a ete saugarde dans le fichier {filename}");
       display(string.Empty);
       display("Press any key to exit:");
       Console.ReadKey();
